@@ -7,10 +7,10 @@ k = 3
 lst.append(65)
 print(lst)
 
-x = 0
-for i in lst[len(lst):3:-1]:
-    lst[i] = lst[i - 1]
-    x += 1
-print(lst)
+for i in range(1, len(lst)):
+    if (len(lst) - i) == k:
+        break
+    lst[len(lst) - i] = lst[len(lst) - i - 1]
 
-lst[3] = 15
+lst[3] = C
+print(lst)
