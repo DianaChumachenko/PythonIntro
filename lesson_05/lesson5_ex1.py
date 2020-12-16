@@ -3,7 +3,7 @@ h = int(input('Please enter height: '))
 i = 0
 while i < h:
     j = 0
-    while j < h * 2:
+    while j < h * 2 - 1:
         if h - 1 - i <= j <= h - 1 + i:
             print('* ', end='')
         else:
@@ -31,7 +31,7 @@ print()
 i = 0
 while i < h:
     j = 0
-    while j < h * 2:
+    while j < h * 2 - 1:
         if h - 1 - i <= j <= h - 1 + i:
             print('* ', end='')
         else:
@@ -42,7 +42,7 @@ while i < h:
 i = 0
 while i < h - 1:
     j = 0
-    while j < h * 2:
+    while j < h * 2 - 1:
         if i == j - 1 or j == h - i - 1 + (h - 1) - 1:
             print('* ', end='')
         else:
@@ -56,7 +56,7 @@ print()
 i = 0
 while i < h:
     j = 0
-    while j < h * 2:
+    while j < h * 2 - 1:
         if h - 1 - i <= j <= h - 1 + i:
             print('* ', end='')
         else:
@@ -67,7 +67,7 @@ while i < h:
 i = 0
 while i < h - 1:
     j = 0
-    while j < h * 2:
+    while j < h * 2 - 1:
         if i == j - 1 or j == h - i - 1 + (h - 1) - 1 or j == h - 1:
             print('* ', end='')
         else:
@@ -76,4 +76,3 @@ while i < h - 1:
     print()
     i += 1
 print()
-
