@@ -9,9 +9,10 @@ res = list(map(lambda lst: lst[0], lst))
 
 res1 = list(map(lambda lst: round((lst[2]*lst[3]), 2), lst))
 
-for i in range(len(res)):
-    if res[i] < 100:
-        res[i] += 10
+for i in range(len(res1)):
+    if res1[i] < 100:
+        res1[i] += 10
+
 
 result = list(zip(res, res1))
 print(result)
