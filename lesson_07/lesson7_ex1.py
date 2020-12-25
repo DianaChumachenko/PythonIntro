@@ -1,7 +1,8 @@
-s = str(input('Please enter a string: '))
+from pprint import pprint
 
-x = {}
+text = input('Please enter text: ')
 
-for word in s:
-    x[word] = x.get(word, 0) + 1
-    print(x[word] - 1, end=' ')
+d = {}
+for word in text.split():
+    d[word] = d.get(word, 0) + 1
+pprint(d)
